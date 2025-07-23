@@ -1,0 +1,63 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: 0 1.5rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.logo-container{
+    width: 130px;
+    height: 80px;
+}
+
+.logo-container img{
+    width: 100%;
+    height: 100%;
+}
+.right-section{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cart-container{
+    display: flex;
+    align-items: center;
+}
+
+.cart-container img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.cart-container{
+    text-decoration: none;
+    color: black;
+    gap: 0.5rem;
+}
+.shop{
+    color: #8987A1;
+}
+.about-us{
+    color: #8987A1;
+}
