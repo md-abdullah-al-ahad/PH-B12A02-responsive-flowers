@@ -11,7 +11,7 @@ nav{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 nav ul{
@@ -21,8 +21,8 @@ nav ul{
 }
 
 .logo-container{
-    width: 130px;
-    height: 80px;
+    width: clamp(80px, 8.5vw, 130px);
+    height: clamp(50px, 4.5vw, 80px);
 }
 
 .logo-container img{
@@ -103,6 +103,30 @@ nav ul li a{
     display: block;
 }
 
+.heading {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15rem 1.5rem 2rem 1.5rem;
+}
+
+h2{
+    font-size: 3.25rem;
+    font-family: 'Noto Serif', serif;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h2 span {
+    color: #E95A08;
+}
+.heading p{
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 768px) {
     .banner {
         flex-direction: column;
@@ -130,5 +154,8 @@ nav ul li a{
     }
     .nav-list{
         display: none;
+    }
+    .heading{
+        padding: 4rem 1rem;
     }
 }
