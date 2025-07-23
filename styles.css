@@ -11,6 +11,7 @@ nav{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 nav ul{
@@ -60,4 +61,43 @@ nav ul li a{
 }
 .about-us{
     color: #8987A1;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    min-height: 400px;
+}
+.left-sec{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-start;    
+}
+
+.left-sec h1 {
+    font-size: clamp(1.5rem, 4vw, 4.0625rem);
+    font-family: 'Noto Serif', serif;
+}
+
+.left-sec h1 span {
+    color: #E95A08;
+}
+
+.left-sec p {
+    font-family: 'noto-serif', serif;
+    font-size: 1.22rem;
+    color: #00000080;
+    padding-top: 1rem;
+}
+
+.right-sec img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
