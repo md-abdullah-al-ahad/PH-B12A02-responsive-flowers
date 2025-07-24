@@ -389,5 +389,14 @@ nav a {
     .deal {
         padding: 4rem 1rem;
     }
+    .latest-deals {
+        flex-direction: column;
+    }
+    .left-deals .down{
+        border-radius: 0px;
+    }
+    .right-deal {
+        border-radius: 12px;
+    }
 
 }
