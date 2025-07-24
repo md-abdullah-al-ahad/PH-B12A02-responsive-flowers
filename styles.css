@@ -173,6 +173,51 @@ h2 span {
     border: none;
     cursor: pointer;
 }
+.plant-lover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    gap: 2rem;
+}
+.plant-lover .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.plant-lover .left img{
+    width: 100%;
+    height: auto;
+    max-width: 540px;
+}
+
+.plant-lover .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.plant-lover .right p {
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+    font-family: 'Noto Serif', serif;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.plant-lover .right ul li {
+    font-size: 1.25rem;
+    font-size: clamp(0.8rem, 2.5vw, 1.25rem);
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 1rem;
+}
+
+.plant-lover .right ul {
+    padding-left: 1.5rem;
+}
+
 
 @media screen and (max-width: 768px) {
     .banner {
@@ -207,5 +252,11 @@ h2 span {
     }
     .card-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .plant-lover {
+        flex-direction: column;
+    }
+    .plant-lover .left, .plant-lover .right {
+        width: 100%;
     }
 }
