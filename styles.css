@@ -309,7 +309,10 @@ nav a {
 .down a,
 .right-deal a {
     color: white;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 
+    clamp(0.9rem, 1.5vw, 1.25rem);
 }
 
 
