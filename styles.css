@@ -232,6 +232,28 @@ nav a {
     padding-bottom: 1rem;
 }
 
+.deal {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 1.5rem 2rem;
+}
+
+.deal h2 {
+    font-size: 3.25rem;
+    font-family: 'Noto Serif', serif;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.deal h2 span {
+    color: #E95A08;
+}
+
+.deal p {
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+}
 @media screen and (max-width: 768px) {
     .banner {
         flex-direction: column-reverse;
@@ -246,6 +268,10 @@ nav a {
 
     .left-sec h1 {
         font-size: 2.5rem;
+    }
+
+    .left-sec {
+        padding: 0 1rem;
     }
 
     .left-sec p {
@@ -274,5 +300,9 @@ nav a {
 
     .plant-image-wrapper .trusted {
         display: none;
+    }
+
+    .deal {
+        padding: 4rem 1rem;
     }
 }
