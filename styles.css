@@ -180,12 +180,14 @@ nav a {
     transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, border 0.25s ease;
     transform-origin: center center;
 }
+
 .btn:hover {
     color: #d85a08;
     background-color: white;
     border: 1px solid #E95A08;
     transform: scale(1.05);
 }
+
 .plant-lover {
     max-width: 1300px;
     margin: 0 auto;
@@ -400,7 +402,7 @@ nav a {
 }
 
 footer {
-    padding: 3rem clamp(1.5rem, 10vw, 9rem);
+    padding: 5rem clamp(1.5rem, 10vw, 9rem);
     margin: 0 auto;
     background-color: #ffffff72;
     display: flex;
@@ -468,12 +470,17 @@ footer {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .trusted {
-  animation: spin 60s linear infinite;
+    animation: spin 60s linear infinite;
 }
 
 
@@ -545,7 +552,9 @@ footer {
     .right-deal {
         border-radius: 12px;
     }
-
+    .right-deal p{
+        font-size: clamp(1rem, 1.5vw, 2rem);
+    }
     .join .subscribe-form {
         width: 90%;
     }
@@ -570,5 +579,8 @@ footer {
 
     .join .subscribe-form input {
         padding: 1rem 0.75rem;
+    }
+    .hide{
+        display: none;
     }
 }
