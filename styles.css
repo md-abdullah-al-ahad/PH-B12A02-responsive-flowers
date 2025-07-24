@@ -1,66 +1,66 @@
-*{
+* {
     font-family: sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-nav{
-    padding: 0 1.5rem;
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5rem;
+body {
+    background-color: #F5F8FF;
 }
 
-nav ul{
+nav {
+    padding: 0 1.5rem;
+    max-width: 1300px;
+    margin: 0 auto 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
 }
 
-.logo-container{
+.logo-container {
     width: clamp(80px, 8.5vw, 130px);
     height: clamp(50px, 4.5vw, 80px);
 }
 
-.logo-container img{
+.logo-container img {
     width: 100%;
     height: 100%;
 }
-.right-section{
+
+.right-section {
     display: flex;
-    justify-self: center;
     align-items: center;
     gap: 1.5rem;
 }
 
-.cart-container{
+.cart-container {
     display: flex;
     align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: rgb(61, 56, 56);
+    gap: 0.5rem;
+    text-decoration: none;
 }
 
-.cart-container img{
+.cart-container img {
     width: 1.5rem;
     height: 1.5rem;
 }
 
-nav ul li a{
+nav a {
     text-decoration: none;
     color: black;
 }
 
-.cart-container{
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    color: rgb(61, 56, 56);
-    gap: 0.5rem;
-}
-.shop{
-    color: #8987A1;
-}
-.about-us{
+.shop,
+.about-us {
     color: #8987A1;
 }
 
@@ -73,12 +73,13 @@ nav ul li a{
     padding: 0 1.5rem;
     min-height: 400px;
 }
-.left-sec{
+
+.left-sec {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
-    align-items: flex-start;    
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .left-sec h1 {
@@ -91,7 +92,7 @@ nav ul li a{
 }
 
 .left-sec p {
-    font-family: 'noto-serif', serif;
+    font-family: 'Noto Serif', serif;
     font-size: 1.22rem;
     color: #00000080;
     padding-top: 1rem;
@@ -107,22 +108,21 @@ nav ul li a{
     max-width: 1300px;
     margin: 0 auto;
     text-align: center;
-    padding: 15rem 1.5rem 2rem 1.5rem;
+    padding: 15rem 1.5rem 2rem;
 }
 
-h2{
+.heading h2 {
     font-size: 3.25rem;
     font-family: 'Noto Serif', serif;
     color: black;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
-h2 span {
+.heading h2 span {
     color: #E95A08;
 }
-.heading p{
-    text-align: center;
+
+.heading p {
     font-size: 1.25rem;
     color: rgba(0, 0, 0, 0.5);
 }
@@ -132,37 +132,40 @@ h2 span {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin: 0 auto;
+    margin: 0 auto 10rem;
     padding: 0 1.5rem;
-    margin-bottom: 10rem;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    align-items: center;;
+    align-items: center;
 }
 
-.card h3{
-    font-size: 1.25rem;
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3,
+.card p {
     font-family: 'Inter', sans-serif;
+}
+
+.card h3 {
+    font-size: 1.25rem;
     color: #111111;
     font-weight: normal;
 }
 
-.card img{
-    width: 100%;
-    height: auto;
-}
-.card p{
+.card p {
     font-size: 1.25rem;
-    font-family: 'Inter', sans-serif;
     color: #111111;
     font-weight: bold;
 }
 
-.btn{
+.btn {
     background-color: #E95A08;
     color: white;
     font-family: 'Inter', sans-serif;
@@ -173,44 +176,48 @@ h2 span {
     border: none;
     cursor: pointer;
 }
-.plant-lover{
+
+.plant-lover {
+    max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
     gap: 2rem;
+    padding: 0 1.5rem;
 }
-.plant-lover .left{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.plant-lover .left img{
+
+.plant-image-wrapper {
+    position: relative;
+    display: inline-block;
     width: 100%;
-    height: auto;
     max-width: 540px;
 }
 
-.plant-lover .right{
+.plant-image-wrapper .flower-store {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.plant-image-wrapper .trusted {
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 200px;
+    height: 200px;
+}
+
+.plant-lover .right {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
+
 .plant-lover .right p {
     font-size: clamp(1.2rem, 5vw, 2.5rem);
     font-family: 'Noto Serif', serif;
-    color: black;
     font-weight: bold;
-    padding-bottom: 1rem;
-}
-.plant-lover .right ul li {
-    font-size: 1.25rem;
-    font-size: clamp(0.8rem, 2.5vw, 1.25rem);
-    color: rgba(0, 0, 0, 0.5);
-    font-family: 'Noto Serif', serif;
     padding-bottom: 1rem;
 }
 
@@ -218,45 +225,54 @@ h2 span {
     padding-left: 1.5rem;
 }
 
+.plant-lover .right ul li {
+    font-family: 'Noto Serif', serif;
+    font-size: clamp(0.8rem, 2.5vw, 1.25rem);
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 1rem;
+}
 
 @media screen and (max-width: 768px) {
     .banner {
-        flex-direction: column;
         flex-direction: column-reverse;
         gap: 2rem;
         padding: 0;
     }
+
+    .left-sec,
     .right-sec {
         width: 100%;
-    }
-    .left-sec{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .right-sec img{
-        width: 100%;
-        height: auto;
     }
 
     .left-sec h1 {
         font-size: 2.5rem;
     }
+
     .left-sec p {
         font-size: 1rem;
     }
-    .nav-list{
+
+    .nav-list {
         display: none;
     }
-    .heading{
+
+    .heading {
         padding: 4rem 1rem;
     }
+
     .card-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .plant-lover {
         flex-direction: column;
     }
-    .plant-lover .left, .plant-lover .right {
+
+    .plant-lover .right {
         width: 100%;
+    }
+
+    .plant-image-wrapper .trusted {
+        display: none;
     }
 }
