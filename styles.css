@@ -127,6 +127,53 @@ h2 span {
     color: rgba(0, 0, 0, 0.5);
 }
 
+.card-container {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    margin-bottom: 10rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;;
+}
+
+.card h3{
+    font-size: 1.25rem;
+    font-family: 'Inter', sans-serif;
+    color: #111111;
+    font-weight: normal;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card p{
+    font-size: 1.25rem;
+    font-family: 'Inter', sans-serif;
+    color: #111111;
+    font-weight: bold;
+}
+
+.btn{
+    background-color: #E95A08;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0;
+    border: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     .banner {
         flex-direction: column;
@@ -157,5 +204,8 @@ h2 span {
     }
     .heading{
         padding: 4rem 1rem;
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
