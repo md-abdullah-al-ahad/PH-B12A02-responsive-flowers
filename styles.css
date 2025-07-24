@@ -264,6 +264,7 @@ nav a {
     margin: 0 auto;
     margin-bottom: 10rem;
 }
+
 .left-deals .up,
 .left-deals .down,
 .right-deal {
@@ -275,22 +276,27 @@ nav a {
     align-items: center;
     justify-content: center;
     color: white;
-    font-weight: bold;;
+    font-weight: bold;
+    ;
 }
+
 .left-deals .up p,
-.left-deals .down p{
+.left-deals .down p {
     font-size: clamp(1rem, 1.5vw, 2rem);
     text-align: center;
     padding-bottom: 0.3rem;
 
 }
-.right-deal p{
+
+.right-deal p {
     font-size: clamp(1.75rem, 3vw, 3rem);
     text-align: center;
     padding-bottom: 0.6rem;
 }
 
-.up a, .down a ,.right-deal a {
+.up a,
+.down a,
+.right-deal a {
     color: white;
     font-weight: bold;
 }
@@ -306,7 +312,7 @@ nav a {
 
 .left-deals .up,
 .left-deals .down {
-  flex: 1;
+    flex: 1;
 }
 
 .right-deal {
@@ -338,6 +344,51 @@ nav a {
     background-image: url('./assets/deal-zabo1.png');
 }
 
+.join {
+    width: 100%;
+    height: clamp(350px, 45vh, 575px);
+    background-image: url('./assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.join p {
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+    color: white;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.join .subscribe-form {
+  display: flex;
+  width: clamp(500px, 50%, 1000px); 
+  margin-top: 1rem;        
+  background: rgba(255, 255, 255, 0.9);                 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.join .subscribe-form input[type="email"] {
+  flex: 1;    
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  border: none;     
+  outline: none;   
+}
+
+.join .subscribe-form button {
+  background-color: #E95A08;
+  color: white;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
     .banner {
         flex-direction: column-reverse;
@@ -349,7 +400,10 @@ nav a {
     .right-sec {
         width: 100%;
     }
-
+    .right-sec img {
+        width: 100%;
+        height: auto;
+    }
     .left-sec h1 {
         font-size: 2.5rem;
     }
@@ -389,14 +443,20 @@ nav a {
     .deal {
         padding: 4rem 1rem;
     }
+
     .latest-deals {
         flex-direction: column;
     }
-    .left-deals .down{
+
+    .left-deals .down {
         border-radius: 0px;
     }
+
     .right-deal {
         border-radius: 12px;
     }
+    .join .subscribe-form {
+        width: 90%;
+}
 
 }
