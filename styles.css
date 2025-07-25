@@ -74,6 +74,9 @@ nav a {
     padding: 0 1.5rem;
     min-height: 400px;
 }
+.bold{
+    font-weight: bold;
+}
 
 .left-sec {
     width: 50%;
