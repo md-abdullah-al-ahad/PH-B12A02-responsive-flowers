@@ -194,7 +194,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     padding: 0 1.5rem;
 }
 
